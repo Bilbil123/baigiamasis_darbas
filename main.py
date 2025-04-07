@@ -22,7 +22,7 @@ class MainApp(QMainWindow, Ui_MainWindow):
             
             return all([
                 result.scheme == 'https',  
-                result.netloc == 'elenta.lt',  #
+                result.netloc == 'elenta.lt',  
                 bool(result.netloc)  
             ])
         except ValueError:
@@ -37,7 +37,7 @@ class MainApp(QMainWindow, Ui_MainWindow):
             self.textBrowser.append("Prašau įvesti adresą, prasidedantį https://elenta.lt!")
             return
             
-        # Patikrinam URL validumą
+
         if not self.is_valid_url(url_input):
             if not url_input.startswith("https://"):
                 self.textBrowser.append("Klaida: URL turi prasidėti su https://")
@@ -47,7 +47,7 @@ class MainApp(QMainWindow, Ui_MainWindow):
                 self.textBrowser.append("Klaida: Netinkamas URL formatas! Pvz.: https://elenta.lt")
             return
             
-        # Pridėti trūkstamą / gale jei reikia
+        
         if not url_input.endswith("/"):
             url_input += "/"
 
