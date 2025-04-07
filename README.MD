@@ -18,7 +18,7 @@
 
 ## Naudojimas
 1. Įdiekite reikalingas bibliotekas, kaip nurodyta aukščiau.
-2. Paleiskite programą vykdydami `python jūsų_failo_pavadinimas.py`.
+2. Paleiskite programą vykdydami `python main.py`.
 3. Atsidariusiame lange įveskite bazinį URL (pvz., https://elenta.lt) į tam skirtą laukelį.
 4. Spustelėkite mygtuką, kad pradėtumėte scrapinimo procesą.
 5. Programa parodys surinktus duomenis lange ir išsaugos juos CSV faile.
